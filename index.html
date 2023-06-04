@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="favicon/script-java.png" type="image/x-icon">
+    <title>Projetos 30 - Javascript</title>
+</head>
+<body>
+    <header>
+        <h1>Projetos 30 - Javascript</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <a href="01-Bateria-JS/index.html">
+                <div class="card">
+                    <img src="img/OQ3OWG0.jpg" alt="bateria" class="card-img">
+                    <h1 class="card-titulo">01 - Bateria em JS</h1>
+                    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                        esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+
+                </div>
+            </a>
+        </section>
+    </main>  
+</body>
+</html>
+
+<style>
+    @import url(https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Jost:ital@1&display=swap);
+
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Aoboshi One', serif;
+        background-color: rgb(255, 201, 207);
+        min-height: 100vh;
+    }
+
+    header{
+        background-color: rgb(255, 132, 153);
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .container {  
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .container a {
+        text-decoration: none;
+    }
+
+    .card {
+        overflow: hidden;
+        background-color: rgb(255, 0, 43);
+        max-width: 15vw;
+        padding: .5rem;
+        border: 5px solid black;
+        border-radius: 10px;
+        transition: .5s;
+        opacity: .95;
+        box-shadow: 0 8px 15px black;
+        
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        box-shadow:
+            0 0 0 1px rgb(255, 0, 43),
+            0 0 30px rgb(255, 0, 43),
+            0 0 15px rgb(255, 0, 43),
+            0 0 10px rgb(255, 0, 43);
+    }
+
+    .card-img {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .card-titulo {
+        text-align: center;
+        font-size: 1em;
+        color: gold;
+        text-shadow: -2px 2.5px black;
+        margin-bottom: .3em;
+    }
+
+    .frase {
+        text-decoration: none;
+        font-size: .5em;
+        color: black;
+        font-weight: lighter;
+    }
+
+    
+</style>
