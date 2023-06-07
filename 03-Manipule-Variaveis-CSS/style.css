@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Jost:ital@1&family=Righteous&display=swap);
+
+:root{
+    --espacamento: 10px;
+    --blur: 5px;
+    --base: #ff9900;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(aquamarine, cyan, aquamarine);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem 20vw;
+    font-family: 'Aoboshi One', serif;
+}
+h1 {
+    margin: 0.2em 0;
+}
+
+h1 span{
+    color: var(--base);
+}
+
+.controls {
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+input{
+    display: block;
+    min-width: 160px;
+    margin-top: 4px;
+    cursor: pointer;
+}
+
+.controls div {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--base);
+    padding: var(--espacamento);
+    filter: blur(var(--blur));
+    
+}
+
+@media screen and (max-width: 451px) {
+    .controls{
+        margin: 3rem 0;
+    }
+}
