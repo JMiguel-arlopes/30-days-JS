@@ -1,0 +1,101 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Shojumaru', sans-serif;
+    background-image: url(https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.painels {
+    display: flex;
+    width: 85vw;
+    gap: 5px;
+}
+
+.painel {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    border-radius: 50px;
+    border: 2px solid black;
+    height: 90vh;
+    background-color: rgb(0, 0, 70);
+
+    flex: 1;
+    position: relative;
+    transition: .7s ease-in;
+}
+
+.painel.active {
+    flex: 3;
+}
+
+.title {
+    color: rgb(255, 230, 40);
+    text-shadow:
+        0 0 5px rgb(255, 40, 40),
+        0 0 10px rgb(255, 230, 40);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 900;
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+    opacity: 0;
+    transition: .5s ease-in;
+}
+
+.painel.active .title {
+    transition: .5s ease-in;
+    transition-delay: .2s;
+    opacity: 1;
+    display: inline-block;
+}
+
+.painel:nth-child(1) {
+    background-image: url(https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg);
+}
+
+.painel:nth-child(2) {
+    background-image: url(https://images.pexels.com/photos/326231/pexels-photo-326231.jpeg?auto=compress&cs=tinysrgb&w=400);
+}
+
+.painel:nth-child(3) {
+    background-image: url(https://images.pexels.com/photos/3760999/pexels-photo-3760999.jpeg?auto=compress&cs=tinysrgb&w=400)
+}
+
+.painel:nth-child(4) {
+    background-image: url(https://images.pexels.com/photos/355938/pexels-photo-355938.jpeg?auto=compress&cs=tinysrgb&w=400)
+}
+
+.painel:nth-child(5) {
+    background-image: url(https://images.pexels.com/photos/2304917/pexels-photo-2304917.jpeg?auto=compress&cs=tinysrgb&w=600)
+}
+
+.painel:nth-child(6) {
+    background-image: url(https://images.pexels.com/photos/1486974/pexels-photo-1486974.jpeg?auto=compress&cs=tinysrgb&w=600)
+}
+
+@media screen and (max-width: 480px) {
+
+    .painel:nth-child(5),
+    .painel:nth-child(6) {
+        display: none;
+    }
+
+    .painel.active {
+        flex: 3.8;
+    }
+}
