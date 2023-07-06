@@ -1,0 +1,92 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+:root {
+    --border-color: #dbdbdb;
+    --border-color-active: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.progress-container {
+    width: 15rem;
+    max-width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.progress-container::before {
+    content: '';
+    background-color: var(--border-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.progress {
+    background-color: var(--border-color-active);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0;
+    z-index: -1;
+    transition: .4s linear;
+}
+
+.circle {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: 3px solid var(--border-color);
+    transition: .4s linear;
+}
+
+.circle.active {
+    border-color: var(--border-color-active);
+}
+
+.btn {
+    color: #f5f5f5;
+    background-color: var(--border-color-active);
+    border: 0;
+    padding: 8px 30px;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.btn:active {
+    transform: scale(1.05);
+}
+
+.btn:disabled {
+    background-color: var(--border-color);
+}
