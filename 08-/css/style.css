@@ -1,0 +1,27 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: auto;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #333;
+}
+
+.container {
+    padding: 50px;
+    background-color: #eee;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.circles-container {
+    /* background-color: pink; */
+    display: fixed;
+    top: 0%;
+    left: 0%;
+}
