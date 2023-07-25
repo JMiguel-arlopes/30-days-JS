@@ -1,0 +1,68 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* color: #fff; */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+        url(https://i.pinimg.com/564x/8b/7d/b5/8b7db5c6115e9724b768fad35407aeb1.jpg);
+    /* url(https://i.pinimg.com/236x/8f/da/cb/8fdacb057ac7c4e27a5f37e9ad32ef52.jpg); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    font-family: 'poppins';
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.box {
+    background: url(https://i.pinimg.com/236x/a6/2d/2c/a62d2cf38bc18dc5572a028c82180c60.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    max-width: 90vw;
+    padding: 5em 8em;
+    margin: 15px 0;
+    box-shadow: 0 0 15px darkblue,
+        inset 0 0 15px darkblue;
+    transform: translate(500%);
+    transition: transform .6s ease;
+}
+
+.box:nth-of-type(even) {
+    box-shadow: 0 0 8px cyan,
+        inset 0 0 15px cyan;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: url(https://i.pinimg.com/236x/68/7b/28/687b287b0f3bf8b0ab1086dc92ffeb0e.jpg);
+    transform: translate(-500%);
+}
+
+.box.show {
+    transform: translate(0);
+}
+
+h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin: 10px 0;
+}
