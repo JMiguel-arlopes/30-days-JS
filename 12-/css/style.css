@@ -1,0 +1,52 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container {
+    min-height: 100%;
+    background-color: pink;
+    /* display: flex; */
+    position: relative;
+}
+
+.content {
+    /* text-align: center; */
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    background-color: aqua;
+}
+
+.content.left {
+    color: white;
+    background-color: black;
+    left: 0;
+}
+
+.content.right {
+    color: black;
+    background-color: white;
+    right: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4rem;
+    font-weight: 700;
+}
