@@ -9,7 +9,7 @@ body {
     /* color: #fff; */
     background:
         linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-        url(https://i.pinimg.com/564x/8b/7d/b5/8b7db5c6115e9724b768fad35407aeb1.jpg);
+        url(https://i.pinimg.com/564x/f8/c8/c1/f8c8c1110ebd6ba2f481e6c4988e10c9.jpg);
     /* url(https://i.pinimg.com/236x/8f/da/cb/8fdacb057ac7c4e27a5f37e9ad32ef52.jpg); */
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -31,7 +31,8 @@ h1 {
 }
 
 .box {
-    background: url(https://i.pinimg.com/236x/a6/2d/2c/a62d2cf38bc18dc5572a028c82180c60.jpg);
+    color: #000;
+    background: url(https://i.pinimg.com/236x/20/3c/e0/203ce08486c8cf70275031ec69cc5f9b.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -46,12 +47,13 @@ h1 {
 }
 
 .box:nth-of-type(even) {
+    color: #fff;
     box-shadow: 0 0 8px cyan,
         inset 0 0 15px cyan;
+    background-image: url(https://i.pinimg.com/736x/c2/fb/00/c2fb004a1353ef99a33d0d7078d4cc5d.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background: url(https://i.pinimg.com/236x/68/7b/28/687b287b0f3bf8b0ab1086dc92ffeb0e.jpg);
     transform: translate(-500%);
 }
 
@@ -60,9 +62,8 @@ h1 {
 }
 
 h2 {
-    color: #fff;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: .5px;
     margin: 10px 0;
 }
