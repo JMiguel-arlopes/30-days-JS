@@ -1,0 +1,91 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Moli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(39, 39, 206);
+    color: #fff;
+    font-family: 'Moli', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: aqua;
+}
+
+p {
+    font-size: 10px;
+    margin-top: 30px;
+}
+
+form {
+    background-color: rgba(0, 0, 0, .4);
+    padding: 30px 40px;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.form-control {
+    width: 300px;
+    margin: 20px 0;
+    position: relative;
+}
+
+.form-control input {
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    padding: 15px 0;
+    display: block;
+    width: 100%;
+}
+
+.form-control label {
+    position: absolute;
+    top: 18px;
+    font-size: 14px;
+}
+
+.form-control label span {
+    display: inline-block;
+    transition: .4s cubic-bezier(.68, -.55, .285, 1.55);
+}
+
+.form-control input:focus,
+.form-control input:focus+label {
+    outline: 0;
+}
+
+.form-control input:valid+label span,
+.form-control input:focus+label span {
+    color: aquamarine;
+    transform: translateY(-30px)
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    background-color: lightskyblue;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+}
