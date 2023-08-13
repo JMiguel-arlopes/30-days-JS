@@ -1,24 +1,63 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Shojumaru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: darkseagreen;
+    font-family: 'poppins', sans-serif;
+    background-color: rgb(88, 116, 183);
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .container {
     background-color: #fff;
     padding: 2.5rem 1.5rem;
-    min-width: 800px;
-    max-width: 1000px;
+    width: 800px;
+    max-width: 100%;
     text-align: center;
     border-radius: 10px;
+    box-shadow:
+        0 10px 5px rgba(0, 0, 0, 0.1),
+        5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-size: 16px;
+    letter-spacing: 2px;
+    opacity: .5;
+}
+
+.advice {
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 50px auto;
+    max-height: 90%;
+}
+
+.btnAdvice {
+    background-color: #9f68e0;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    box-shadow:
+        0 5px 5px rgba(0, 0, 0, 0.2),
+        5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all .2s;
+}
+
+.btnAdvice:active {
+    transform: scale(.95);
 }
